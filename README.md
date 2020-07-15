@@ -103,7 +103,7 @@ Name: goodquality, dtype: int64
 ```
 It indicates that out of 1599 wine samples, 855 sample are ofgood quality. 
 
-Standarsizing the particular variable(X)
+Standardising the particular variable(X)
 ```
 from sklearn.preprocessing import StandardScaler
 X_features = X
