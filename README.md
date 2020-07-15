@@ -78,7 +78,9 @@ To convert the following dataset into classification problem, we must check for 
 red_wine.isnull()
 ```
 To check the sum of null values present
-```red_wine.isnull().sum()```
+```
+red_wine.isnull().sum()
+```
 It will be easier to convert the given dataset in the presence of zero null values.
 
 To find the effectiveness of the problem,let us initialize the criteria as 'goodquality' where a particular wine will be effective if its quality is reater than or equal to 6
