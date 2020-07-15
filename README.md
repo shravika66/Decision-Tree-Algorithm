@@ -86,7 +86,7 @@ red_wine.isnull().sum()
 It will be easier to convert the given dataset in the presence of zero null values.
 
 
-To find the effectiveness of the problem,let us initialize the criteria as 'goodquality' where a particular wine will be effective if its quality is reater than or equal to 6
+To find the effectiveness of the problem,let us initialize the criteria as 'goodquality' where a particular wine will be effective if its quality is greater than or equal to 6
 ```
 red_wine['goodquality'] = [1 if x >= 6 
                             else 0 for x in red_wine['quality']]
@@ -98,7 +98,7 @@ X = red_wine.drop(['quality','goodquality'], axis = 1)
 y = red_wine['goodquality']
 ```
 
-To check the number of good wine present.
+To check the number of sample of good wine present.
 ```
 red_wine['goodquality'].value_counts()
 
