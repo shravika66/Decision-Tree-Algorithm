@@ -1,8 +1,7 @@
 **Introduction**
 
   Random forests is a supervised learning algorithm. It can be used both for classification and regression. It is also the most flexible and easy to use algorithm. A forest is comprised of trees. It is said that the more trees it has, the more robust a forest is. Random forests creates decision trees on randomly selected data samples, gets prediction from each tree and selects the best solution by means of voting. It also provides a pretty good indicator of the feature importance.
-   Tree models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels.Decision trees are among the most popular machine learning algorithms given their intelligibility and simplicity.
-   A random forest is a collection of decision trees. With that said, random forests are a strong modeling technique and much more robust than a single decision tree.
+   Tree models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. A random forest is a collection of decision trees. With that said, random forests are a strong modeling technique and much more robust than a single decision tree.
 
 -Random forest uses gini importance or mean decrease in impurity (MDI) to calculate the importance of each feature. 
 -Gini importance is also known as the total decrease in node impurity. This is how much the model fit or accuracy decreases when you drop a variable. 
@@ -12,7 +11,7 @@
  
 **Predicting Wine Quality**
  
-  For this project, I used Kaggle’s https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 dataset to build  classification model to predict whether a particular red wine is “good quality” or not. Each wine in this dataset is given a “quality” score between 0 and 10. For the purpose of this project, I converted the output to a binary output where each wine is either “good quality” (a score of 6 or higher) or not. The quality of a wine is determined by 11 input variables:
+  For this project, I used Kaggle’s https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 dataset to build  classification model to predict whether a particular sample of red wine is “good quality” or not. Each sample of wine in this dataset is given a “quality” score between 0 and 10. For the purpose of this project, I converted the output to a binary output where each wine is either “good quality” (a score of 6 or higher) or not. The quality of a wine is determined by 11 input variables:
  -Fixed acidity
  -Volatile acidity
  -Citric acid
@@ -57,7 +56,9 @@ red_wine.head()
 ```
 
 Checking the quality based on pH value
-```sns.countplot(x="quality",hue="pH",data=red_wine)```
+```
+sns.countplot(x="quality",hue="pH",data=red_wine)
+```
 
 To see the correlation between the variables present, we use the correlation matrix
 ```
