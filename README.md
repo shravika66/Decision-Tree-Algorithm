@@ -13,8 +13,7 @@
 
 -The Gini index can describe the overall explanatory power of the variables.
  
- ![Tree]
- (https://www.google.com/search?q=random+forest+tree&sxsrf=ALeKk02x3S9ajxNKa5WOht0ASkfkNRNEsQ:1594874181158&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd552o-dDqAhVYwjgGHfckBXAQ_AUoAXoECA8QAw&biw=1366&bih=625#imgrc=VoADrlymx-DPaM)
+![0_YEwFetXQGPB8aDFV](https://user-images.githubusercontent.com/66662946/87627957-879f6180-c74d-11ea-9e62-5ccca392d2b1.png)
  
 **Predicting Wine Quality**
  
@@ -184,6 +183,6 @@ To check the quality of good quality wine
 From the above graph we can come to conclusion that sample of good quality wine contains large amount of Alcohol in it.
 
 
-Random forests is considered as a highly accurate and robust method because of the number of decision trees participating in the process.
+Therefore, **Random forests** is considered as a highly accurate and robust method because of the number of decision trees participating in the process.
 We can get the relative feature importance, which helps in selecting the most contributing features for the classifier.
 
