@@ -149,8 +149,8 @@ from sklearn.metrics import classification_report,confusion_matrix
 
 Assigning a the Random forest classifier to an variable
 ```
-dec_Tree=DecisionTreeClassifier(random_state=1)
-dec_Tree.fit(X_train,y_train)
+rfc_model = RandomForestClassifier(random_state=1)
+rfc_model.fit(X_train, y_train)
 ```
 
 **Prediction**
