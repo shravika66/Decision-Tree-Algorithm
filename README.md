@@ -1,6 +1,6 @@
 **Introduction**
 
-  Random forests is a supervised learning algorithm. It can be used both for classification and regression. It is also the most flexible and easy to use algorithm. A forest is comprised of trees. It is said that the more trees it has, the more robust a forest is. Random forests creates decision trees on randomly selected data samples, gets prediction from each tree and selects the best solution by means of voting. It also provides a pretty good indicator of the feature importance.
+  **Random forest** is a supervised learning algorithm. It can be used both for classification and regression. It is also the most flexible and easy to use algorithm. A forest is comprised of trees. It is said that the more trees it has, the more robust a forest is. Random forests creates decision trees on randomly selected data samples, gets prediction from each tree and selects the best solution by means of voting. It also provides a pretty good indicator of the feature importance.
    Tree models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. A random forest is a collection of decision trees. With that said, random forests are a strong modeling technique and much more robust than a single decision tree.
 
 -Random forest uses gini importance or mean decrease in impurity (MDI) to calculate the importance of each feature. 
@@ -104,6 +104,7 @@ To check the sum of null values present:
 red_wine.isnull().sum()
 ```
 ![40](https://user-images.githubusercontent.com/66662946/87628714-309a8c00-c74f-11ea-9e80-b1af2c8a5bb6.png)
+
 It will be easier to solve the given dataset in the presence of zero null values.
 
 
