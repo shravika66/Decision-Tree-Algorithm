@@ -167,6 +167,12 @@ feat_importances = pd.Series(rfc_model.feature_importances_, index=X_features.co
 feat_importances.nlargest(25).plot(kind='barh',figsize=(10,10))
 ```
 
+To check the quality of good quality wine
+![Good Quality Wine](C:\Users\SuperUser\Desktop\1.png)
+
+From the above graph we can come to conclusion that sample of good quality wine contains large amount of alcohol in it.
+
+
 Random forests is considered as a highly accurate and robust method because of the number of decision trees participating in the process.
 We can get the relative feature importance, which helps in selecting the most contributing features for the classifier.
 
