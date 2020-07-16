@@ -4,12 +4,17 @@
    Tree models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. A random forest is a collection of decision trees. With that said, random forests are a strong modeling technique and much more robust than a single decision tree.
 
 -Random forest uses gini importance or mean decrease in impurity (MDI) to calculate the importance of each feature. 
+
 -Gini importance is also known as the total decrease in node impurity. This is how much the model fit or accuracy decreases when you drop a variable. 
+
 -The larger the decrease, the more significant the variable is. 
+
 -Here, the mean decrease is a significant parameter for variable selection. 
- -The Gini index can describe the overall explanatory power of the variables.
+
+-The Gini index can describe the overall explanatory power of the variables.
  
- ![Tree](https://www.google.com/search?q=random+forest+tree&sxsrf=ALeKk02x3S9ajxNKa5WOht0ASkfkNRNEsQ:1594874181158&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd552o-dDqAhVYwjgGHfckBXAQ_AUoAXoECA8QAw&biw=1366&bih=625#imgrc=VoADrlymx-DPaM)
+ ![Tree]
+ (https://www.google.com/search?q=random+forest+tree&sxsrf=ALeKk02x3S9ajxNKa5WOht0ASkfkNRNEsQ:1594874181158&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd552o-dDqAhVYwjgGHfckBXAQ_AUoAXoECA8QAw&biw=1366&bih=625#imgrc=VoADrlymx-DPaM)
  
 **Predicting Wine Quality**
  
@@ -173,8 +178,8 @@ feat_importances.nlargest(25).plot(kind='barh',figsize=(10,10))
 ```
 
 To check the quality of good quality wine
-![Good Quality Wine]
-(C:\Users\SuperUser\Desktop\1.png)
+
+![1](https://user-images.githubusercontent.com/66662946/87627791-24153400-c74d-11ea-8315-487da74a8057.png)
 
 From the above graph we can come to conclusion that sample of good quality wine contains large amount of Alcohol in it.
 
