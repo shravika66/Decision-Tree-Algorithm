@@ -196,7 +196,7 @@ feat_importances.nlargest(25).plot(kind='barh',figsize=(10,10))
 
 ![1](https://user-images.githubusercontent.com/66662946/87627791-24153400-c74d-11ea-8315-487da74a8057.png)
 
-From the above graph we can come to conclusion that sample of good quality wine contains large amount of Alcohol in it.
+From the above graph we can come to conclusion that a sample of red wine is of good quality if it contains large amount of Alcohol.
 
 
 Therefore, **Random forests** is considered as a highly accurate and robust method because of the number of decision trees participating in the process.
