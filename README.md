@@ -17,7 +17,7 @@
  
 **Predicting Wine Quality**
  
-  For this project, I used Kaggle’s https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 dataset to build  classification model to predict whether a particular sample of red wine is “good quality” or not. Each sample of wine in this dataset is given a “quality” score between 0 and 10. For the purpose of this project, I converted the output to a binary output where each wine is either “good quality” (a score of 6 or higher) or not. The quality of a wine is determined by 11 input variables:
+  For this project, I used Kaggle’s https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 dataset to build  classification model to predict whether a particular sample of red wine is “good quality” or not. Each sample of wine in this dataset is given a “quality” score between 0 and 10. For the purpose of this project, I converted the output to a binary output where each wine is either “good quality” (a score of 7 or higher) or not. The quality of a wine is determined by 11 input variables:
   
  1.Fixed acidity
  
@@ -108,9 +108,9 @@ red_wine.isnull().sum()
 It will be easier to solve the given dataset in the presence of zero null values.
 
 
-To find the effectiveness of the problem,let us initialize the criteria as 'goodquality' where a particular wine will be effective if its quality is greater than or equal to 6
+To find the effectiveness of the problem,let us initialize the criteria as 'goodquality' where a particular wine will be effective if its quality is greater than or equal to 7
 ```
-red_wine['goodquality'] = [1 if x >= 6 
+red_wine['goodquality'] = [1 if x >= 7
                             else 0 for x in red_wine['quality']]
 ```
 
@@ -124,11 +124,11 @@ To check the number of sample of good wine present.
 ```
 red_wine['goodquality'].value_counts()
 
-1    855
-0    744
+0    1382
+1     217
 Name: goodquality, dtype: int64
 ```
-It indicates that out of 1599 wine samples, 855 sample are ofgood quality. 
+It indicates that out of 1599 wine samples, 217 samples are of good quality. 
 
 Standardising the particular variable(X)
 ```
@@ -164,7 +164,7 @@ pred2 = rfc_model.predict(X_test)
 print(classification_report(y_test,pred2))
 ```
 
-![50](https://user-images.githubusercontent.com/66662946/87633194-8cb5de00-c758-11ea-9424-07527970a5df.png)
+![50](https://user-images.githubusercontent.com/66662946/87634855-b7556600-c75b-11ea-8bc8-3c66983cd175.png)
 
 
 **Confusion Matrix**
@@ -173,6 +173,11 @@ A confusion matrix is a table that is often used to describe the performance of 
 ```
 print(confusion_matrix(y_test,pred2))
 ```
+
+```
+[[345  10]
+ [ 16  29]]
+ ```
 
 **Finding important features**
 
