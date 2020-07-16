@@ -164,12 +164,8 @@ pred2 = rfc_model.predict(X_test)
 print(classification_report(y_test,pred2))
 ```
 
-```
-Precision    recall  f1-score   support
+![50](https://user-images.githubusercontent.com/66662946/87633194-8cb5de00-c758-11ea-9424-07527970a5df.png)
 
-           0       0.79      0.75      0.77       185
-           1       0.79      0.83      0.81       215
-```
 
 **Confusion Matrix**
 
