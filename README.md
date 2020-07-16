@@ -18,17 +18,28 @@
 **Predicting Wine Quality**
  
   For this project, I used Kaggle’s https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 dataset to build  classification model to predict whether a particular sample of red wine is “good quality” or not. Each sample of wine in this dataset is given a “quality” score between 0 and 10. For the purpose of this project, I converted the output to a binary output where each wine is either “good quality” (a score of 6 or higher) or not. The quality of a wine is determined by 11 input variables:
- -Fixed acidity
- -Volatile acidity
- -Citric acid
- -Residual sugar
- -Chlorides
- -Free sulfur dioxide
- -Total sulfur dioxide
- -Density
- -pH
- -Sulfates
- -Alcohol
+  
+ 1.Fixed acidity
+ 
+ 2.Volatile acidity
+ 
+ 3.Citric acid
+ 
+ 4.Residual sugar
+ 
+ 5.Chlorides
+ 
+ 6.Free sulfur dioxide
+ 
+ 7.Total sulfur dioxide
+ 
+ 8.Density
+ 
+ 9.pH
+ 
+ 10.Sulfates
+ 
+ 11.Alcohol
  
  Let us use random forest method to determine the quality of given red wine using Random Forest method since it obtain highest precision.
  
