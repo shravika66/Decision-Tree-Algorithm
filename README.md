@@ -9,6 +9,8 @@
 -Here, the mean decrease is a significant parameter for variable selection. 
  -The Gini index can describe the overall explanatory power of the variables.
  
+ ![Tree](https://www.google.com/search?q=random+forest+tree&sxsrf=ALeKk02x3S9ajxNKa5WOht0ASkfkNRNEsQ:1594874181158&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd552o-dDqAhVYwjgGHfckBXAQ_AUoAXoECA8QAw&biw=1366&bih=625#imgrc=VoADrlymx-DPaM)
+ 
 **Predicting Wine Quality**
  
   For this project, I used Kaggle’s https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009 dataset to build  classification model to predict whether a particular sample of red wine is “good quality” or not. Each sample of wine in this dataset is given a “quality” score between 0 and 10. For the purpose of this project, I converted the output to a binary output where each wine is either “good quality” (a score of 6 or higher) or not. The quality of a wine is determined by 11 input variables:
@@ -121,6 +123,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25, random_
 ```
 
 **Modelling the data**
+
 Let's use Random Forest Model to obtain highest precision.
 
 Importing libraries
@@ -147,12 +150,14 @@ Precision    recall  f1-score   support
 ```
 
 **Confusion Matrix**
+
 A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known.
 ```
 print(confusion_matrix(y_test,pred2))
 ```
 
 **Finding important features**
+
 You are finding important features or selecting features in the Red Wine dataset
 Train the model using train set and find prediction on the train set
 ```
@@ -168,9 +173,10 @@ feat_importances.nlargest(25).plot(kind='barh',figsize=(10,10))
 ```
 
 To check the quality of good quality wine
-![Good Quality Wine](C:\Users\SuperUser\Desktop\1.png)
+![Good Quality Wine]
+(C:\Users\SuperUser\Desktop\1.png)
 
-From the above graph we can come to conclusion that sample of good quality wine contains large amount of alcohol in it.
+From the above graph we can come to conclusion that sample of good quality wine contains large amount of Alcohol in it.
 
 
 Random forests is considered as a highly accurate and robust method because of the number of decision trees participating in the process.
