@@ -43,7 +43,7 @@
  
  **Let's get into the implementation.**
  
- Let us use random forest method to determine the quality of given red wine using Random Forest method since it obtain highest precision.
+ Let's determine the quality of given samples of red wine using Random Forest method since it obtain highest precision.
  
  Importing Libraries
  ```
@@ -73,6 +73,7 @@ To obtain first five rows of the data
 ```
 red_wine.head()
 ```
+![30](https://user-images.githubusercontent.com/66662946/87628552-d3063f80-c74e-11ea-95cf-3a248bf83421.png)
 
 Checking the quality based on pH value
 ```
@@ -102,7 +103,8 @@ To check the sum of null values present:
 ```
 red_wine.isnull().sum()
 ```
-It will be easier to convert the given dataset in the presence of zero null values.
+![40](https://user-images.githubusercontent.com/66662946/87628714-309a8c00-c74f-11ea-9e80-b1af2c8a5bb6.png)
+It will be easier to solve the given dataset in the presence of zero null values.
 
 
 To find the effectiveness of the problem,let us initialize the criteria as 'goodquality' where a particular wine will be effective if its quality is greater than or equal to 6
@@ -159,7 +161,9 @@ rfc_model.fit(X_train, y_train)
 ```
 pred2 = rfc_model.predict(X_test)
 print(classification_report(y_test,pred2))
+```
 
+```
 Precision    recall  f1-score   support
 
            0       0.79      0.75      0.77       185
@@ -175,8 +179,8 @@ print(confusion_matrix(y_test,pred2))
 
 **Finding important features**
 
-You are finding important features or selecting features in the Red Wine dataset
-Train the model using train set and find prediction on the train set
+We are finding important features or selecting features in the Red Wine dataset.
+Train the model using train set and find prediction on the train set.
 ```
 from sklearn import ensemble
 gbc = ensemble.RandomForestClassifier()
@@ -188,8 +192,6 @@ We can graph the quantity of the variables present in good quality wine.
 feat_importances = pd.Series(rfc_model.feature_importances_, index=X_features.columns)
 feat_importances.nlargest(25).plot(kind='barh',figsize=(10,10))
 ```
-
-To check the quality of good quality wine
 
 ![1](https://user-images.githubusercontent.com/66662946/87627791-24153400-c74d-11ea-8315-487da74a8057.png)
 
