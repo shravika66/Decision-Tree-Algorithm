@@ -41,6 +41,8 @@
  
  11.Alcohol
  
+ **Let's get into the implementation.**
+ 
  Let us use random forest method to determine the quality of given red wine using Random Forest method since it obtain highest precision.
  
  Importing Libraries
